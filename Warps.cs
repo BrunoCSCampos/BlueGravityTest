@@ -32,6 +32,27 @@ public class Warps : MonoBehaviour
             Debug.Log("You have exited the store.");
             player.transform.position = new Vector3(-1.51f, -0.9f, 0);
         }
+     else if(warpId == 2 && other.tag == "Player")
+        {
+            Debug.Log("You have entered the inn.");
+            player.transform.position = new Vector3(-12.1f, -1.75f, 0);
+        }
+     else if(warpId == 3 && other.tag == "Player")
+        {
+            Debug.Log("You have exited the inn.");
+            player.transform.position = new Vector3(-0.7f, -2.2f, 0);
+        }
+     else if(warpId == 4 && other.tag == "Player")
+        {
+            Debug.Log("You have entered the cave.");
+            player.transform.position = new Vector3(-0.64f, -6.58f, 0);
+        }
+     else if(warpId == 5 && other.tag == "Player")
+        {
+            Debug.Log("You have exited the cave.");
+            player.transform.position = new Vector3(1.774f, -3.83f, 0);
+        }
+
     }
 
 }
